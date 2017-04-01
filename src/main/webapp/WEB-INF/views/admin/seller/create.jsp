@@ -93,25 +93,20 @@
 							</div>
 							
 							<div class="control-group">
-								<label for="title" class="control-label">平均配送时间：</label>
+								<label for="title" class="control-label">平均等待时间：</label>
 								<div class="controls">
 									<input type="text" name='sendtime' id=sendtime placeholder="">
 								</div>
 							</div>
 							
 							<div class="control-group">
-								<label for="title" class="control-label">起送价：</label>
+								<label for="title" class="control-label">最低消费：</label>
 								<div class="controls">
 									<input type="text" name='lowprice' id=lowprice placeholder="">
 								</div>
 							</div>
 							
-							<div class="control-group">
-								<label for="title" class="control-label">配送费：</label>
-								<div class="controls">
-									<input type="text" name='sendprice' id=sendprice placeholder="">
-								</div>
-							</div>
+							
 							
 							<div class="control-group">
 								<label for="title" class="control-label">分类：</label>

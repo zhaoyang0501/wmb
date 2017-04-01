@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 /***
- *用户实体
+ *商家实体
  */
 @Entity
 @Table(name = "t_seller")

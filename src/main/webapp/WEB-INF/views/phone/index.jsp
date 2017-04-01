@@ -85,7 +85,7 @@
 	                    <img src="${pageContext.request.contextPath}/img/category/c3.png" alt="">
 	                </div>
 	                <p class="weui_grid_label">
-	                 		   超市
+	                 		湘菜
 	                </p>
               	 </a>
               	 </div>
@@ -110,7 +110,7 @@
 	                    <img src="${pageContext.request.contextPath}/img/category/c1.png" alt="">
 	                </div>
 	                <p class="weui_grid_label">
-	                 		  甜饼甜点
+	                 		 粤菜
 	                </p>
               	 </a>
                </div>
@@ -133,7 +133,7 @@
 	                    <img src="${pageContext.request.contextPath}/img/category/c6.png" alt="">
 	                </div>
 	                <p class="weui_grid_label">
-	                 		   外卖
+	                 		  经济小炒
 	                </p>
               	 </a>
               	 </div>
@@ -146,7 +146,7 @@
 	                    <img src="${pageContext.request.contextPath}/img/category/c7.png" alt="">
 	                </div>
 	                <p class="weui_grid_label">
-	                 		   夜宵
+	                 		   淮扬菜
 	                </p>
               	 </a>
               	 </div>
@@ -169,7 +169,7 @@
                     <div class="ui-list-info">
                         <h4 class="ui-nowrap">${bean.name } <p style="float: right;color: orange;" class="ui-txt-warning">${bean.score }分</p></h4>
                         <p class="ui-nowrap">${bean.remark }</p>
-                        <p class="ui-nowrap">起送价${bean.lowprice }|配送费${bean.sendprice }|${bean.sendtime }分钟送达</p>
+                        <p class="ui-nowrap">人均消费${bean.lowprice }|平均等待${bean.sendtime }分钟</p>
                     </div>
                 </li>
             	</c:forEach>
@@ -182,7 +182,7 @@
                     <div class="ui-list-info">
                         <h4 class="ui-nowrap">战斗鸡排 <p style="float: right;color: orange;" class="ui-txt-warning">4.4分</p></h4>
                         <p class="ui-nowrap">满100送饮料</p>
-                        <p class="ui-nowrap">起送价25|配送费0|43分钟送达</p>
+                        <p class="ui-nowrap">人均消费60|平均等待10分钟</p>
                     </div>
                 </li>
                 
@@ -193,7 +193,7 @@
                     <div class="ui-list-info">
                         <h4 class="ui-nowrap">外婆家酸菜鱼 <p style="float: right;color: orange;" class="ui-txt-warning">4.4分</p></h4>
                         <p class="ui-nowrap">满100送汤</p>
-                        <p class="ui-nowrap">起送价25|配送费0|23分钟送达</p>
+                          <p class="ui-nowrap">人均消费60|平均等待10分钟</p>
                     </div>
                 </li>
                 
@@ -204,7 +204,7 @@
                     <div class="ui-list-info">
                         <h4 class="ui-nowrap">KFC <p style="float: right;color: orange;" class="ui-txt-warning">4.4分</p></h4>
                         <p class="ui-nowrap">满100送优惠券</p>
-                        <p class="ui-nowrap">起送价25|配送费0|23分钟送达</p>
+                          <p class="ui-nowrap">人均消费60|平均等待10分钟</p>
                     </div>
                 </li>
             </ul>

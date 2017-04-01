@@ -1,5 +1,8 @@
 package com.pzy.controller;
 
+import java.io.File;
+import java.util.Date;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.pzy.entity.Seller;
 import com.pzy.entity.User;
+import com.pzy.service.CategoryService;
 import com.pzy.service.SellerService;
 import com.pzy.service.UserService;
 /***
@@ -22,7 +26,10 @@ public class IndexController {
 	
 	@Autowired
 	private UserService userService;
-
+	
+	@Autowired
+	private CategoryService categoryService;
+	
 	@Autowired
 	private SellerService sellerService;
 	@RequestMapping("center/index")
@@ -73,6 +80,20 @@ public class IndexController {
 	public String login() {
 		return "admin/login";
 	}
+	
+	@RequestMapping("doregister")
+	public String doregister(Seller seller,Model model) {
+		seller.setCreateDate(new Date());
+		sellerService.save(seller);
+        model.addAttribute("tip", "商家注册成功");
+        return "admin/login";
+	}
+	@RequestMapping("register")
+	public String register(Model model) {
+		model.addAttribute("categorys", categoryService.findAll());
+		return "admin/register";
+	}
+	
 	@RequestMapping("loginout")
 	public String loginout(HttpSession httpSession) {
 		httpSession.setAttribute("adminuser", null);

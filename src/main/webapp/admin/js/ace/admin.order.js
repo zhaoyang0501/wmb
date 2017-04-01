@@ -59,8 +59,6 @@ jQuery.order = {
 					},{
 						"mDataProp" : "addr"
 					},{
-						"mDataProp" : "sendprice"
-					},{
 						"mDataProp" : "toalprice"
 					},{
 						"mDataProp" : "state"
@@ -69,7 +67,7 @@ jQuery.order = {
 					}],
 					"aoColumnDefs" : [
 						{
-							'aTargets' : [7],
+							'aTargets' : [6],
 							'fnRender' : function(oObj, sVal) {
 								return " <span class='label label-success'>"+sVal+"</span>";
 							}
@@ -87,7 +85,7 @@ jQuery.order = {
 							}
 						},
 						{
-							'aTargets' : [8],
+							'aTargets' : [7],
 							'fnRender' : function(oObj, sVal) {
 								return" <button class=\"btn2 btn-info\" onclick=\"$.order.pass("+oObj.aData.id+")\"><i class=\"icon-edit\"></i> 审核通过</button> " +
 										" <button class=\"btn2 btn-info\" onclick=\"$.order.deleteUser("+oObj.aData.id+")\"><i class=\"icon-trash\"></i> 删除</button>";

@@ -42,11 +42,7 @@
 		            	</div>
 			        </c:forEach>
 		             <hr/>
-		              <div class="ui-row-flex ui-whitespace">
-		               <div class="ui-col ui-col-3">配送费</div>
-		                <div class="ui-col ui-col-3"></div>
-		                <div class="ui-col ui-col">￥${order.sendprice }</div>
-		            </div>
+		             
 		             <div class="ui-row-flex ui-whitespace">
 		               <div class="ui-col ui-col-3">总价</div>
 		                <div class="ui-col ui-col-3"></div>
@@ -60,28 +56,32 @@
         <div class="demo-block">
             <div class="ui-form ui-border-t">
                 <form action="${pageContext.request.contextPath}/phone/sumbitcart">
-                    <div class="ui-form-item ui-border-b">
-                        <label>
-                        		  详细地址
-                        </label>
-                        <input type="text" value="${user.address }" placeholder="详细地址"  name='address'/>
-                    </div>
-                     <div class="ui-form-item ui-border-b">
-                        <label>
-                        		  收货人
-                        </label>
-                        <input type="text"  value="${user.username }"  placeholder="详细地址"  name='user'/>
-                    </div>
+                   
+                   <ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
+				    <li class="ui-border-t">
+				        <label class="ui-radio" for="radio">
+				            <input type="radio" name="radio">
+				        </label>
+				        <p>即使订餐</p>
+				    </li>
+				    <li class="ui-border-t">
+				        <label class="ui-radio" for="radio">
+				            <input type="radio" checked name="radio">
+				        </label>
+				        <p>预约</p>
+				    </li>
+				</ul>
+        
                     <div class="ui-form-item ui-border-b">
                         <label>
                         		  备注
                         </label>
-                        <input type="text" placeholder="详细地址"  name='remark' />
+                        <input type="text" placeholder="备注"  name='remark' />
                     </div>
                     
                      <div class="ui-btn-wrap">
                 <button class="ui-btn-lg ui-btn-primary" type="submit">
-                  提交订单
+                  		提交订单
                 </button>
             </div>
                 </form>

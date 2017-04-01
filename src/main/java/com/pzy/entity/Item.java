@@ -1,6 +1,5 @@
 package com.pzy.entity;
 /***
- * 分类
  *
  */
 import javax.persistence.Column;

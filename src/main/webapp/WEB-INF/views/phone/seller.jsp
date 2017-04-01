@@ -18,7 +18,7 @@
     
     <body ontouchstart>
         <header class="ui-header ui-header-positive ui-border-b">
-            <i class="ui-icon-return" onclick="history.back()"></i><h1>快叫外卖吧！ </h1><button data-href="${pageContext.request.contextPath}/phone/docart" class="ui-btn">去结算</button>
+            <i class="ui-icon-return" onclick="history.back()"></i><h1>快来点餐吧！</h1><button data-href="${pageContext.request.contextPath}/phone/docart" class="ui-btn">去结算</button>
         </header>
         <footer class="ui-footer ui-footer-btn">
             <ul class="ui-tiled ui-border-t">

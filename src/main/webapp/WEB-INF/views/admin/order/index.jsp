@@ -43,10 +43,9 @@
 										<tr>
 											<th >id</th>
 											<th >客户姓名</th>
-											<th >供货商</th>
+											<th >餐厅</th>
 											<th >下单日期</th>
-											<th >客户地址</th>
-											<th >配送费</th>
+											<th >客户备注</th>
 											<th >总价</th>
 											<th >订单状态</th>
 											<th >操作</th>

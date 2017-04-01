@@ -147,7 +147,7 @@ public class PhoneController {
 		}
 		Project project=projectService.find(pid);
 		order.addPorject(project);
-		order.sets
+		//order.setToalprice(toalprice);
 		httpSession.setAttribute("order", order);
 		map.put("tip", "加入成功！");
 		return map;

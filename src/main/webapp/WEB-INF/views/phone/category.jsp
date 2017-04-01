@@ -59,7 +59,7 @@
 			                    <div class="ui-list-info">
 			                        <h4 class="ui-nowrap">${bean.name } <p style="float: right;color: orange;" class="ui-txt-warning">${bean.score }分</p></h4>
 			                        <p class="ui-nowrap">${bean.remark }</p>
-			                        <p class="ui-nowrap">起送价${bean.lowprice }|配送费${bean.sendprice }|${bean.sendtime }分钟送达</p>
+			                        <p class="ui-nowrap">人均消费${bean.lowprice }|平均等待${bean.sendtime }分钟</p>
 			                    </div>
 			                </li>
 			            	</c:forEach>
